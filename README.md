@@ -9,11 +9,20 @@ Data is from the [STS benchmark](http://ixa2.si.ehu.es/stswiki/index.php/STSbenc
 
 **TODO:**
 Describe each metric in ~ 1 sentence
-NIST：shows a moderate to strong positive (around 0.5) correlation with human-made labels.
-BLEU：shows a moderate positive correlation (around 0.4) with human-made labels.
-WER：shows a moderate negative correlation (around -0.3) with human-made labels.
-LCS：shows a moderate positive correlation (around 0.4) with human-made labels.
-Edit Dist：shows a weak correlation (close to 0, positive in train, negative in dev and test) with human-made labels.  
+NIST：A metric evaluates machine translation quality by calculating n-gram precision with equal weight and the informative 
+level of each n-gram, in this case shows a moderate to strong positive (around 0.5) correlation with human-made labels.
+
+BLEU：A metric evaluates machine translation quality by calculating n-gram precision with equal weight, in this case 
+shows a moderate positive correlation (around 0.4) with human-made labels.
+
+WER：A metric evaluates machine translation and speech recognition quality by calculating ratio between number of substitutions, 
+deletions, insertions and total number of words, in this case shows a moderate negative correlation (around -0.3) with human-made labels.
+
+LCS：A metric evaluates semantic textual similarity by calculating the longest substring' length, in this case shows a 
+moderate positive correlation (around 0.4) with human-made labels.
+
+Edit Dist：A metric evaluates semantic textual similarity by calculating the smallest step needed to transform a string 
+to another, in this case shows a weak correlation (close to 0, positive in train, negative in dev and test) with human-made labels.  
 
 **TODO:** Fill in the correlations. Expected output for DEV is provided; it is ok if your actual result
 varies slightly due to preprocessing/system difference, but the difference should be quite small.
