@@ -36,12 +36,12 @@ def symmetrical_WER(text_pair):
     t2_toks = word_tokenize(t2.lower())
 
     try:
-        wer_1 = edit_distance(t1_lower, t2_lower) / max(len(t1_toks), len(t2_toks))
+        wer_1 = edit_distance(t1_lower, t2_lower) / max((len(t1_toks), len(t2_toks)))
     except ZeroDivisionError:
         wer_1 = 0.0
 
     try:
-        wer_2 = edit_distance(t2_lower, t1_lower) / min(len(t1_toks), len(t2_toks))
+        wer_2 = edit_distance(t2_lower, t1_lower) / min((len(t1_toks), len(t2_toks)))
     except ZeroDivisionError:
         wer_2 = 0.0
 
